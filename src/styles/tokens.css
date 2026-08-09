@@ -1,0 +1,46 @@
+:root {
+  /* Color — midnight blue to black */
+  --color-bg-top: #0b1120;
+  --color-bg-bottom: #000005;
+  --color-surface: #131b2e;
+  --color-surface-raised: #1b2540;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text-primary: #f3f5fa;
+  --color-text-secondary: #a8b0c3;
+  --color-text-muted: #6b7280;
+
+  --color-accent: #6d8dff;
+  --color-pilot: #8b7cf6;
+  --color-plane: #6d8dff;
+  --color-engineer: #34d1a6;
+  --color-warn-soft: #e8b465;
+  --color-struggle: #c77b7b;
+
+  --gradient-app-bg: linear-gradient(180deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
+
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-timer: 3.5rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+}
