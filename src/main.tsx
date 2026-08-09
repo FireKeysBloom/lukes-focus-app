@@ -5,9 +5,12 @@ import './styles/tokens.css'
 import './styles/global.css'
 import './styles/layout.css'
 import App from './App.tsx'
+import { AuthProvider } from './context/AuthContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </StrictMode>,
 )

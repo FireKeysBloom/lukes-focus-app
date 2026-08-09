@@ -5,15 +5,35 @@
 }
 
 .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: calc(var(--safe-top) + var(--space-4)) var(--space-4) var(--space-3);
-  text-align: center;
+}
+
+.top-bar-spacer {
+  width: 3.5rem;
 }
 
 .top-bar-title {
+  flex: 1;
+  text-align: center;
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: 600;
   color: var(--color-text-primary);
+}
+
+.top-bar-sign-out {
+  width: 3.5rem;
+  text-align: right;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .app-shell-content {
@@ -60,4 +80,73 @@
 .bottom-nav-item.active {
   background: var(--color-surface-raised);
   color: var(--color-text-primary);
+}
+
+.login-screen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  min-height: 100svh;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.login-title {
+  font-size: var(--text-xl);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.login-field input {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.login-field input:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.login-error {
+  color: var(--color-struggle);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.login-submit {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-bg-bottom);
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  cursor: pointer;
+}
+
+.login-submit:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
