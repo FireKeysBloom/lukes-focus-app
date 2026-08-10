@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/lukes-focus-app/', // must exactly match the GitHub repo name
   plugins: [react()],
+  server: {
+    host: true, // expose on the LAN so it's reachable from a phone on the same Wi-Fi
+  },
 })

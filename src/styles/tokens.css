@@ -17,7 +17,7 @@
   --color-struggle: #c77b7b;
 
   --gradient-app-bg:
-    radial-gradient(circle at 22% 4%, rgba(139, 124, 246, 0.28), transparent 38%),
+    radial-gradient(circle at 22% 4%, rgba(130, 140, 246, 0.28), transparent 38%),
     radial-gradient(circle at 92% 22%, rgba(109, 141, 255, 0.24), transparent 40%),
     radial-gradient(circle at 20% 76%, rgba(52, 209, 166, 0.16), transparent 40%),
     linear-gradient(180deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
