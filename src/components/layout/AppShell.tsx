@@ -30,7 +30,7 @@ export function AppShell() {
   }
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell app-shell--${view}`}>
       <TopBar title={titles[view]} />
       <main className="app-shell-content">
         {view === 'dashboard' && <DashboardView />}

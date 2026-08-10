@@ -4,6 +4,14 @@
   min-height: 100svh;
 }
 
+.app-shell--session {
+  background: linear-gradient(180deg, #1a2f66 0%, #1a2f66 35%, #05070d 100%);
+}
+
+.app-shell--goals {
+  background: linear-gradient(90deg, #05070d 0%, #05070d 35%, #1a2f66 100%);
+}
+
 .top-bar {
   display: flex;
   align-items: center;
@@ -20,7 +28,7 @@
   text-align: center;
   font-family: var(--font-display);
   font-size: var(--text-lg);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-text-primary);
 }
 
@@ -59,7 +67,7 @@
   gap: var(--space-2);
   padding: var(--space-2) var(--space-4) calc(var(--safe-bottom) + var(--space-3));
   border-top: 1px solid var(--color-border);
-  background: rgba(11, 17, 32, 0.7);
+  background: rgba(12, 22, 56, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -216,4 +224,98 @@
   border-radius: var(--radius-md);
   padding: var(--space-3) var(--space-4);
   color: var(--color-text-primary);
+}
+
+/* --- Dashboard hero (Today tab) --- */
+
+.dashboard-hero {
+  flex: 1;
+  padding: var(--space-6) 0 var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-stat-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.dashboard-stat-value {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.dashboard-stat-label {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  color: var(--color-text-secondary);
+}
+
+.dashboard-gauge {
+  position: relative;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-gauge-arc {
+  width: 100%;
+}
+
+.dashboard-gauge-value {
+  position: absolute;
+  top: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-gauge-number {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-text-primary);
+}
+
+.dashboard-gauge-unit {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+.dashboard-headline {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+.dashboard-body {
+  text-align: center;
+  max-width: 34ch;
+  font-size: var(--text-base);
 }

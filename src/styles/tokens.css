@@ -1,9 +1,9 @@
 :root {
-  /* Color — midnight blue to black */
-  --color-bg-top: #0b1120;
-  --color-bg-bottom: #000005;
-  --color-surface: #131b2e;
-  --color-surface-raised: #1b2540;
+  /* Color — blue night sky */
+  --color-bg-top: #1a2b5c;
+  --color-bg-bottom: #0c1638;
+  --color-surface: #1c2c5c;
+  --color-surface-raised: #28407e;
   --color-border: rgba(255, 255, 255, 0.08);
   --color-text-primary: #f3f5fa;
   --color-text-secondary: #a8b0c3;
@@ -16,9 +16,13 @@
   --color-warn-soft: #e8b465;
   --color-struggle: #c77b7b;
 
-  --gradient-app-bg: linear-gradient(180deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
+  --gradient-app-bg:
+    radial-gradient(circle at 22% 4%, rgba(139, 124, 246, 0.28), transparent 38%),
+    radial-gradient(circle at 92% 22%, rgba(109, 141, 255, 0.24), transparent 40%),
+    radial-gradient(circle at 20% 76%, rgba(52, 209, 166, 0.16), transparent 40%),
+    linear-gradient(180deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
 
-  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Instrument Serif', ui-serif, Georgia, serif;
   --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
 
   --text-sm: 0.875rem;
